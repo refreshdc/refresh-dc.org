@@ -1,6 +1,1 @@
-import config from "@jgarber/eslint-config";
-
-export default [
-  { ignores: ["_site"] },
-  ...config,
-];
+export { default } from "@jgarber/eslint-config";
