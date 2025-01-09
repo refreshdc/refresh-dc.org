@@ -6,6 +6,7 @@ export default class {
   }
 
   render({ app }) {
+    /* eslint-disable sort-keys */
     return JSON.stringify({
       "@context": [
         "https://www.w3.org/ns/activitystreams",
@@ -61,5 +62,6 @@ export default class {
         url: new URL("assets/images/cover.jpg", app.start_url),
       },
     }, null, 2);
+    /* eslint-enable sort-keys */
   }
 }

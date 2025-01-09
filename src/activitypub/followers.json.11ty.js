@@ -11,8 +11,8 @@ export default class {
     return JSON.stringify({
       "@context": "https://www.w3.org/ns/activitystreams",
       id: new URL(permalink, app.start_url),
-      totalItems: orderedItems.length,
       orderedItems,
-    }, null, 2)
+      totalItems: orderedItems.length,
+    }, null, 2);
   }
 }
