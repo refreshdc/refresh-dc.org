@@ -14,7 +14,7 @@ export default function(eleventyConfig) {
 
   // Passthrough File Copy
   eleventyConfig
-    .addPassthroughCopy("./src/_headers")
+    .addPassthroughCopy("./src/_{headers,redirects}")
     .addPassthroughCopy("./src/*.{ico,txt,webmanifest}")
     .addPassthroughCopy("./src/assets");
 
