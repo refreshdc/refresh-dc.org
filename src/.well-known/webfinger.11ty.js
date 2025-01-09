@@ -7,7 +7,7 @@ export default class {
   }
 
   render({ app }) {
-    const subject = "acct:@refreshdc@refresh-dc.org";
+    const subject = "acct:refreshdc@refresh-dc.org";
     const aliases = [app.start_url];
     const links = [
       {
