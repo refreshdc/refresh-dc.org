@@ -5,7 +5,7 @@ export default class {
     };
   }
 
-  render({ app }) {
+  render({ app, permalink }) {
     /* eslint-disable sort-keys */
     return JSON.stringify({
       "@context": [
@@ -17,7 +17,7 @@ export default class {
           value: "http://schema.org#value",
         },
       ],
-      id: app.start_url,
+      id: new URL(permalink, app.start_url),
       type: "Organization",
       following: new URL("activitypub/following.json", app.start_url),
       followers: new URL("activitypub/followers.json", app.start_url),
