@@ -21,7 +21,7 @@ export default class {
       type: "Organization",
       following: new URL("activitypub/following.json", app.start_url),
       followers: new URL("activitypub/followers.json", app.start_url),
-      // inbox: "",
+      inbox: new URL("activitypub/inbox.json", app.start_url),
       outbox: new URL("activitypub/outbox.json", app.start_url),
       preferredUsername: "refreshdc",
       name: app.name,
