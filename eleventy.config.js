@@ -1,13 +1,13 @@
-import { readFileSync } from "node:fs";
-
 import eleventyPluginLiquid from "@jgarber/eleventy-plugin-liquid";
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 
 import markdownItAttrs from "markdown-it-attrs";
 
+import manifest from "./src/manifest.webmanifest.json" with { type: "json" };
+
 export default function(eleventyConfig) {
   // Global Data
-  eleventyConfig.addGlobalData("app", JSON.parse(readFileSync("./src/manifest.webmanifest")));
+  eleventyConfig.addGlobalData("app", manifest);
 
   // Configuration
   eleventyConfig.setDataFileBaseName("_data");
@@ -15,8 +15,11 @@ export default function(eleventyConfig) {
   // Passthrough File Copy
   eleventyConfig
     .addPassthroughCopy("./src/_{headers,redirects}")
-    .addPassthroughCopy("./src/*.{ico,txt,webmanifest}")
-    .addPassthroughCopy("./src/assets");
+    .addPassthroughCopy("./src/*.{ico,txt}")
+    .addPassthroughCopy("./src/assets")
+    .addPassthroughCopy({
+      "./src/manifest.webmanifest.json": "manifest.webmanifest",
+    });
 
   // Plugins
   eleventyConfig.addPlugin(eleventyPluginLiquid);
