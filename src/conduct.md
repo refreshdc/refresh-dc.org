@@ -1,6 +1,5 @@
 ---
 title: "Code of Conduct"
-permalink: "conduct.html"
 ---
 
 Refresh DC is an inclusive community based on treating all individuals respectfully, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. As a participant at one of our events, you agree to be nice, considerate, and civil toward other participants. Do not be mean or nasty. Pretty easy, right?
