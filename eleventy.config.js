@@ -1,6 +1,7 @@
 import eleventyPluginLiquid from "@jgarber/eleventy-plugin-liquid";
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 import eleventyPluginRoutes from "@jgarber/eleventy-plugin-routes";
+import eleventyPluginWebfinger from "@jgarber/eleventy-plugin-webfinger";
 
 import markdownItAttrs from "markdown-it-attrs";
 
@@ -25,6 +26,7 @@ export default function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyPluginLiquid);
   eleventyConfig.addPlugin(eleventyPluginRoutes);
+  eleventyConfig.addPlugin(eleventyPluginWebfinger);
 
   eleventyConfig.addPlugin(eleventyPluginMarkdown, {
     plugins: [markdownItAttrs],
