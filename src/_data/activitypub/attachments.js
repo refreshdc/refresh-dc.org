@@ -18,4 +18,4 @@ export default [
     type: "PropertyValue",
     value: `<a href="https://www.linkedin.com/company/refresh-dc/" rel="me"><span class="invisible">https://</span>www.linkedin.com/company/refresh-dc/</a>`,
   },
-]
+];
