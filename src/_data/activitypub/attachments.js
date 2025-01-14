@@ -11,7 +11,7 @@ export default [
   {
     name: "Newsletter",
     type: "PropertyValue",
-    value: `<a href="${url}/newsletter" rel="me"><span class="invisible">https://</span>${url.hostname}/newsletter</a>`,
+    value: `<a href="${new URL ("newsletter", url)}" rel="me"><span class="invisible">https://</span>${url.hostname}/newsletter</a>`,
   },
   {
     name: "LinkedIn",
