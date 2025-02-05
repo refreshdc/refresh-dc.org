@@ -5,7 +5,8 @@
   "icons": [
     {
       "src": "/assets/images/refreshdc-512x512.png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "lang": "en-US",
