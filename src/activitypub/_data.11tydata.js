@@ -1,5 +1,6 @@
 export default {
   eleventyAllowMissingExtension: true,
-  layout: false,
+  eleventyExcludeFromCollections: true,
+  layout: "base.11ty.js",
   permalink: ({ page }) => page.filePathStem,
 };

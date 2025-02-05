@@ -1,8 +1,6 @@
 export default class {
   render({ activitypub }) {
-    const { actor, collections, attachments: attachment } = activitypub;
-
-    return JSON.stringify({
+    return {
       "@context": [
         "https://www.w3.org/ns/activitystreams",
         "https://w3id.org/security/v1",
@@ -16,9 +14,7 @@ export default class {
           value: "schema:value",
         },
       ],
-      ...actor,
-      ...collections,
-      attachment,
-    }, null, 2);
+      ...activitypub,
+    };
   }
 }

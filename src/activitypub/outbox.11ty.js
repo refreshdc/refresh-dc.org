@@ -2,11 +2,11 @@ export default class {
   render({ activitypub }) {
     const orderedItems = [];
 
-    return JSON.stringify({
+    return {
       "@context": "https://www.w3.org/ns/activitystreams",
-      id: activitypub.collections.outbox,
+      id: activitypub.outbox,
       orderedItems,
       totalItems: orderedItems.length,
-    }, null, 2);
+    };
   }
 }
