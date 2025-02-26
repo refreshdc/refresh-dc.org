@@ -4,14 +4,6 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 0
 
-/.well-known/webfinger
-  Access-Control-Allow-Origin: *
-  Content-Type: application/jrd+json; charset=UTF-8
-
-/activitypub/*
-  Access-Control-Allow-Origin: *
-  Content-Type: application/activity+json; charset=UTF-8
-
 /favicon.ico
   Content-Type: image/x-icon
 
