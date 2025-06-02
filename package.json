@@ -17,7 +17,7 @@
     "test": "test -f ./_site/index.html"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.0",
     "@jgarber/eleventy-plugin-liquid": "^2.0.2",
     "@jgarber/eleventy-plugin-markdown": "^2.0.1",
     "@jgarber/eleventy-plugin-routes": "^0.1.0",
