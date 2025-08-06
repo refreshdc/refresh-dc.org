@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   max-width: 36rem;
   padding: 4rem 1.5rem;
-  text-shadow: -1px 1px 0 rgba(0 0 0 / 10%);
+  text-shadow: -1px 1px 0 rgb(0 0 0 / 10%);
 
   @media (width >= 33rem) {
     padding-block-start: 8rem;
@@ -36,10 +36,10 @@ body {
 
 a {
   background-color: transparent;
-  color: rgba(255 255 255 / 50%);
+  color: rgb(255 255 255 / 50%);
 
   &:is(:focus, :hover) {
-    color: rgba(255 255 255 / 75%);
+    color: rgb(255 255 255 / 75%);
   }
 }
 
@@ -73,7 +73,7 @@ main {
   }
 
   em {
-    background-color: rgba(255 255 255 / 15%);
+    background-color: rgb(255 255 255 / 15%);
     border-radius: 0.25rem;
     font-style: normal;
     margin-inline-end: 0.25rem;
@@ -82,7 +82,7 @@ main {
 
   hr {
     background-color: var(--color-white);
-    background-color: rgba(255 255 255 / 15%);
+    background-color: rgb(255 255 255 / 15%);
     border: 0;
     box-sizing: content-box;
     height: 0.125rem;
