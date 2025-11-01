@@ -21,7 +21,7 @@
     "@jgarber/eleventy-plugin-liquid": "^2.0.2",
     "@jgarber/eleventy-plugin-markdown": "^2.0.1",
     "@jgarber/eleventy-plugin-routes": "^0.1.0",
-    "@jgarber/eslint-config": "^9.0.0",
+    "@jgarber/eslint-config": "^10.0.0",
     "@jgarber/stylelint-config": "^6.0.0",
     "markdown-it-attrs": "^4.3.1"
   }
