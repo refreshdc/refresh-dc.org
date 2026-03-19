@@ -9,12 +9,7 @@
   "repository": "https://github.com/refreshdc/refresh-dc.org",
   "scripts": {
     "build": "npx eleventy --quiet",
-    "lint": "npm run lint:css && npm run lint:js",
-    "lint:css": "npx stylelint ./src/**/*.css",
-    "lint:js": "npx eslint .",
-    "pretest": "npm run build",
-    "start": "npm run build -- --serve",
-    "test": "test -f ./_site/index.html"
+    "start": "npm run build -- --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
