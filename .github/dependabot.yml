@@ -7,9 +7,13 @@ updates:
       interval: "monthly"
     assignees:
       - "jgarber623"
+    cooldown:
+      default-days: 7
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "monthly"
     assignees:
       - "jgarber623"
+    cooldown:
+      default-days: 7
