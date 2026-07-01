@@ -12,7 +12,7 @@
     "start": "npm run build -- --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy": "^3.1.6",
     "@jgarber/eleventy-plugin-liquid": "^2.0.2",
     "@jgarber/eleventy-plugin-markdown": "^2.0.1",
     "@jgarber/eleventy-plugin-routes": "^0.1.0",
